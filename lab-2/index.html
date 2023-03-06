@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box" style="width: 400px; margin: auto; margin-top: 300px">
+        <form method="POST" action="https://httpbin.org/post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Name</label>
+                <input name="name" class="form-control form-control-lg" type="text"
+                    aria-label=".form-control-lg example" />
+            </div>
+            <select name="select" class="form-select">
+                <option>Good</option>
+                <option>Bad</option>
+                <option>Question</option>
+            </select>
+            <div class="form-floating" style="margin-top: 20px;">
+                <textarea name="comment" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+            <div class="form-check">
+                <input name="SMS" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    SMS
+                </label>
+            </div>
+            <div class="form-check">
+                <input name="Email" class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Email
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 30px;">Submit</button>
+        </form>
+        <a href="back.php">get_headers</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
